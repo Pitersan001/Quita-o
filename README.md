@@ -9,9 +9,15 @@ Site responsivo da Quita-o, assessoria veicular independente.
 - Número configurado: `11959329691`.
 - Sem banco de dados: os dados do formulário não são enviados a um servidor; o visitante revisa a mensagem no WhatsApp antes de enviar.
 
-## Publicar na Cloudflare
+## Cloudflare Pages
 
-O projeto é estático e pode ser publicado na Cloudflare Pages conectado ao GitHub.
+O projeto Pages `quita-o` já foi criado na conta Cloudflare e está configurado para servir a pasta `public`. Endereço previsto: https://quita-o.pages.dev (ainda sem publicação inicial).
+
+A tentativa de conectar automaticamente o repositório ao GitHub foi recusada pela integração GitHub Pages da Cloudflare (erro interno de instalação da integração). Para ativar deploy automático, abra o painel Cloudflare, reinstale/autorize a integração GitHub e conecte o repositório `Pitersan001/Quita-o` ao projeto `quita-o`.
+
+Configurações: branch `main`, diretório de saída `public`, sem comando de build.
+
+### Passos para conectar o GitHub
 
 1. Acesse https://dash.cloudflare.com/ e abra **Workers & Pages**.
 2. Escolha **Create application** → **Pages** → **Import an existing Git repository**.
