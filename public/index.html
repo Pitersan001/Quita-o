@@ -4,11 +4,11 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#090d14">
-  <meta name="description" content="A Quita-o oferece orientação independente para quem busca negociar débitos e encontrar caminhos para regularizar seu veículo.">
+  <meta name="description" content="A AUTIVRA oferece orientação independente para quem busca negociar débitos e encontrar caminhos para regularizar seu veículo.">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Quita-o | Uma nova oportunidade para seu veículo">
+  <meta property="og:title" content="AUTIVRA | Uma nova oportunidade para seu veículo">
   <meta property="og:description" content="Entenda suas opções e converse com nossa equipe sobre a situação do seu veículo.">
-  <title>Quita-o | Seu veículo merece uma nova oportunidade</title>
+  <title>AUTIVRA | Seu veículo merece uma nova oportunidade</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -18,18 +18,56 @@
     @media(max-width:850px){.navlinks{display:none;position:absolute;top:78px;left:0;right:0;background:#0b111a;padding:22px;flex-direction:column;gap:16px;border-bottom:1px solid var(--line)}.navlinks.open{display:flex}.mobile-toggle{display:block}.nav>.btn{display:none}.hero{min-height:620px}.hero-inner{padding:90px 0}.grid{grid-template-columns:1fr 1fr}.steps{grid-template-columns:1fr 1fr}.split{grid-template-columns:1fr;gap:32px}.visual{min-height:280px}}
     @media(max-width:560px){.wrap{width:min(var(--max),calc(100% - 32px))}.hero h1{letter-spacing:-1.8px}.hero{min-height:600px}.section{padding:74px 0}.grid,.steps,.formgrid{grid-template-columns:1fr}.field.full{grid-column:auto}.formbox{padding:22px}.trustline{gap:12px;flex-direction:column}.footerlinks{flex-wrap:wrap}.whats{right:14px;bottom:14px}}
     @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}.reveal{opacity:1;transform:none}}
+  
+:root{--blue:#b7ff3c;--blue2:#86d91e;--acid:#b7ff3c;--bg:#07090b}
+body{background:#07090b}
+.brand{font-size:1.72rem;letter-spacing:-1.7px}.brand span{color:var(--acid)}
+.topbar{background:rgba(5,8,10,.72);backdrop-filter:blur(22px);border-bottom-color:rgba(183,255,60,.16)}
+.btn{background:var(--acid);color:#0a1005;border-radius:4px;box-shadow:0 8px 30px rgba(183,255,60,.12);transition:transform .25s,box-shadow .25s}
+.btn:hover{transform:translateY(-4px) scale(1.025);box-shadow:0 14px 38px rgba(183,255,60,.24)}
+.btn.ghost{border-color:rgba(183,255,60,.48);color:#f4f7f0}.eyebrow{color:var(--acid);letter-spacing:3px}
+.hero{min-height:790px;background-position:center;background-attachment:fixed}
+.hero:before{background:linear-gradient(90deg,rgba(3,6,8,.94),rgba(3,6,8,.67) 48%,rgba(3,6,8,.08)),linear-gradient(0deg,rgba(3,6,8,.72),transparent 50%)}
+.hero:after{border-color:rgba(183,255,60,.2);box-shadow:0 0 0 55px rgba(183,255,60,.035),0 0 0 110px rgba(183,255,60,.025)}
+.hero h1{font-size:clamp(3.2rem,7.8vw,7.2rem);letter-spacing:-.075em;line-height:.96;text-wrap:balance}
+.hero h1 em,.section h2 em{color:var(--acid);font-style:normal}.hero p{font-size:1.18rem;max-width:530px}
+.section{padding:125px 0}.section h2{font-size:clamp(2.4rem,5vw,4.2rem);letter-spacing:-.065em}
+.service,.step,.faq-item,.formbox{border-radius:5px;background:linear-gradient(145deg,#13191d,#0b0f12);border-color:rgba(183,255,60,.15);transition:transform .35s,border-color .35s,box-shadow .35s}
+.service:hover,.step:hover{border-color:rgba(183,255,60,.6);box-shadow:0 25px 60px #0008}
+.brand-pill{border-radius:3px;border-color:#39433a}.visual{border-radius:4px}
+.cinema{position:relative;min-height:690px;display:flex;align-items:center;overflow:hidden;background:#050709}
+.cinema-backdrop,.cinema-shade{position:absolute;inset:0}
+.cinema-backdrop iframe{position:absolute;top:50%;left:50%;width:120vw;height:67.5vw;min-width:100%;min-height:100%;transform:translate(-50%,-50%);border:0;pointer-events:none;opacity:.78}
+.cinema-shade{background:linear-gradient(90deg,rgba(4,7,8,.92),rgba(4,7,8,.42) 60%,rgba(4,7,8,.55)),linear-gradient(0deg,#07090b,transparent 35%)}
+.cinema-content{position:relative;z-index:2;padding:110px 0}
+.cinema-content h2{font:800 clamp(2.8rem,6vw,5.4rem)/1 Manrope,sans-serif;letter-spacing:-.07em;max-width:780px;margin:22px 0}
+.cinema-content h2 em{color:var(--acid);font-style:normal}.cinema-content p{max-width:570px;color:#d3d9d2;font-size:1.1rem;margin-bottom:28px}
+.cinema-content small{display:block;margin-top:28px;color:#9ca69a;font-size:.72rem}
+.presenter-frame{min-height:430px;position:relative;overflow:hidden;background:radial-gradient(circle at 60% 30%,rgba(183,255,60,.2),transparent 35%),linear-gradient(135deg,#1b2420,#080b0a 65%);border:1px solid rgba(183,255,60,.24);display:grid;place-items:center}
+.presenter-placeholder{text-align:center;padding:36px;max-width:440px}.presenter-placeholder p{color:#d2dbd1;margin:22px 0}
+.presenter-tag{display:block;color:var(--acid);font-size:.72rem;letter-spacing:3px;font-weight:800;margin-top:22px}
+.play-orb{display:grid;place-items:center;width:78px;height:78px;margin:auto;border:1px solid var(--acid);border-radius:50%;color:var(--acid);box-shadow:0 0 0 14px rgba(183,255,60,.07),0 0 55px rgba(183,255,60,.16);font-size:1.2rem}
+.presenter-layout{gap:70px}.whats{background:var(--acid);color:#091006;box-shadow:0 10px 40px rgba(183,255,60,.2);border-radius:4px}
+.reveal{opacity:0;transform:translateY(42px) scale(.985);transition:opacity .85s,transform .85s}
+.reveal.visible{opacity:1;transform:translateY(0) scale(1)}
+.cursor-glow{position:fixed;z-index:1;pointer-events:none;width:340px;height:340px;border-radius:50%;background:radial-gradient(circle,rgba(183,255,60,.075),transparent 68%);transform:translate(-50%,-50%);opacity:0}
+@media(hover:hover) and (pointer:fine){body:hover .cursor-glow{opacity:1}}
+@media(max-width:850px){.hero{background-attachment:scroll;min-height:690px}.cinema{min-height:560px}.presenter-layout{gap:32px}.cinema-backdrop iframe{width:180vw;height:101vw}}
+@media(max-width:560px){.section{padding:82px 0}.hero h1{font-size:clamp(3rem,15vw,5rem)}.cinema-content{padding:80px 0}.presenter-frame{min-height:340px}}
+@media(prefers-reduced-motion:reduce){.hero{background-attachment:scroll}.cursor-glow{display:none}}
+
   </style>
 </head>
 <body>
 <header class="topbar"><div class="wrap nav">
-  <a class="brand" href="#inicio" aria-label="Quita-o início">quita<span>-o</span>.</a>
+  <a class="brand" href="#inicio" aria-label="AUTIVRA início">AUTIVRA<span>.</span></a>
   <nav class="navlinks" id="navlinks" aria-label="Navegação principal"><a href="#servicos">Soluções</a><a href="#marcas">Veículos</a><a href="#processo">Como funciona</a><a href="#duvidas">Dúvidas</a></nav>
   <a class="btn" href="#contato">Fale com um especialista</a>
   <button class="mobile-toggle" id="mobileToggle" aria-label="Abrir menu" aria-expanded="false">Menu</button>
 </div></header>
 <main>
 <section class="hero" id="inicio"><div class="wrap hero-inner">
-  <div class="eyebrow">Assessoria veicular independente</div>
+  <div class="eyebrow">ASSESSORIA VEICULAR • NOVOS CAMINHOS</div>
   <h1>SEU VEÍCULO MERECE UMA <em>NOVA OPORTUNIDADE.</em></h1>
   <p>Entenda suas possibilidades para negociar débitos e buscar caminhos para regularizar seu veículo. Atendimento claro, online e sem complicação.</p>
   <div class="hero-actions"><a class="btn" href="#contato">Quero analisar meu caso <span aria-hidden="true">→</span></a><a class="btn ghost" href="#processo">Conheça o processo</a></div>
@@ -43,10 +81,17 @@
     <article class="service reveal"><div class="num">03 / ACOMPANHAMENTO</div><h3>Próximos passos</h3><p>Você recebe orientação sobre os passos seguintes, documentos necessários e cuidados durante o processo.</p></article>
   </div>
 </div></section>
+<section class="cinema" id="experiencia">
+<div class="cinema-backdrop"><iframe src="https://www.youtube-nocookie.com/embed/zGBPy-Zgxqs?autoplay=1&mute=1&controls=0&loop=1&playlist=zGBPy-Zgxqs&modestbranding=1&playsinline=1" title="Vídeo cinematográfico de carros em movimento" allow="autoplay; encrypted-media; picture-in-picture" loading="lazy"></iframe><div class="cinema-shade"></div></div>
+<div class="wrap cinema-content"><div class="eyebrow">AUTIVRA • MOVIMENTO E TRANSPARÊNCIA</div><h2>Seu próximo capítulo começa com <em>clareza.</em></h2><p>Assista, conheça nosso jeito de trabalhar e entenda como uma análise inicial pode ajudar você a avaliar os próximos passos.</p><a class="btn" href="#contato">Quero conversar <span aria-hidden="true">↗</span></a><small>Imagens ilustrativas de direção noturna • Vídeo: Stockroll / YouTube (licença CC BY 4.0; crédito ao autor).</small></div>
+</section>
 <section class="section alt" id="marcas"><div class="wrap split">
   <div class="reveal"><div class="eyebrow">Diversos modelos e fabricantes</div><h2>Seu carro, sua realidade. Uma análise feita para o seu caso.</h2><p class="muted">Atendemos solicitações relacionadas a veículos de diferentes marcas e categorias. A análise depende das informações e das condições apresentadas pelo credor.</p><div class="brands" aria-label="Marcas de veículos"><span class="brand-pill">Volkswagen</span><span class="brand-pill">Fiat</span><span class="brand-pill">Jeep</span><span class="brand-pill">Peugeot</span><span class="brand-pill">Citroën</span><span class="brand-pill">Outras marcas</span></div></div>
   <div class="visual reveal" role="img" aria-label="Fotografia de automóvel em cenário urbano"><span class="visual-label">Mobilidade • Planejamento • Novos caminhos</span></div>
 </div></section>
+<section class="section" id="apresentacao"><div class="wrap split presenter-layout">
+<div class="presenter-frame reveal"><div class="presenter-placeholder"><span class="play-orb">▶</span><span class="presenter-tag">APRESENTAÇÃO AUTIVRA</span><p>Um espaço para a nossa equipe explicar, em vídeo, como funciona a análise e a renegociação.</p><a href="#contato" class="btn ghost">Fale com nossa equipe</a></div></div>
+<div class="reveal"><div class="eyebrow">Sem complicação, sem promessas vazias</div><h2>Entender o caminho é o primeiro passo.</h2><p class="muted">Na AUTIVRA, o primeiro contato começa com uma conversa. Entendemos o cenário, explicamos quais alternativas podem existir e orientamos você a avaliar as condições diretamente com os credores.</p><p class="muted"><strong>Importante:</strong> cada caso depende da análise e das condições da instituição credora. Não prometemos descontos, aprovação ou resultados.</p><a class="btn" href="#contato">Começar minha análise <span aria-hidden="true">→</span></a><p class="notice">Para publicar o vídeo de uma pessoa apresentando a empresa, envie a gravação real do representante autorizado. Não colocamos um depoimento ou porta-voz fictício.</p></div></div></section>
 <section class="section" id="processo"><div class="wrap">
   <div class="section-head reveal"><div class="eyebrow">Simples e direto</div><h2>Como funciona o atendimento</h2><p>Você começa com algumas informações básicas. Não envie documentos ou senhas pelo formulário.</p></div>
   <div class="steps">
@@ -76,7 +121,7 @@
 <section class="section" id="duvidas"><div class="wrap">
   <div class="section-head reveal"><div class="eyebrow">Transparência em primeiro lugar</div><h2>Dúvidas frequentes</h2></div>
   <div class="faq">
-    <details class="faq-item reveal"><summary>A Quita-o é um banco ou financeira?</summary><p>Não. A Quita-o é apresentada como uma assessoria independente e não representa bancos, financeiras, montadoras ou órgãos públicos.</p></details>
+    <details class="faq-item reveal"><summary>A AUTIVRA é um banco ou financeira?</summary><p>Não. A AUTIVRA é apresentada como uma assessoria independente e não representa bancos, financeiras, montadoras ou órgãos públicos.</p></details>
     <details class="faq-item reveal"><summary>Vocês garantem desconto ou retirada de restrições?</summary><p>Não. Condições de negociação dependem exclusivamente do credor e da análise de cada caso. Não há garantia de desconto, aprovação ou resultado.</p></details>
     <details class="faq-item reveal"><summary>Preciso enviar documentos agora?</summary><p>Não. Para o primeiro contato, informe apenas os dados básicos solicitados. Nunca compartilhe senhas, códigos de autenticação ou dados bancários de acesso.</p></details>
     <details class="faq-item reveal"><summary>O atendimento é online?</summary><p>Sim. O primeiro contato e a orientação inicial são realizados online, pelo WhatsApp.</p></details>
@@ -86,10 +131,10 @@
 <footer class="footer"><div class="wrap">
   <div class="footerrow"><a class="brand" href="#inicio">quita<span>-o</span>.</a><div class="footerlinks"><a href="#privacidade">Privacidade</a><a href="#termos">Termos de uso</a><a href="#contato">Contato</a></div></div>
   <small id="privacidade"><strong>Privacidade:</strong> os dados preenchidos são usados para preparar seu contato pelo WhatsApp. O formulário não envia automaticamente os dados para um banco de dados. Evite incluir informações sensíveis. Você pode solicitar esclarecimentos pelo canal de atendimento.</small>
-  <small id="termos"><strong>Termos e aviso:</strong> a Quita-o é uma assessoria independente. Não possui vínculo oficial ou representação de Volkswagen, Stellantis, bancos, financeiras, credores ou órgãos públicos. A atuação não garante descontos, quitação, suspensão de medidas ou regularização. As decisões e condições cabem às instituições responsáveis.</small>
-  <small>© <span id="yearNow"></span> Quita-o. Todos os direitos reservados.</small>
+  <small id="termos"><strong>Termos e aviso:</strong> a AUTIVRA é uma assessoria independente. Não possui vínculo oficial ou representação de Volkswagen, Stellantis, bancos, financeiras, credores ou órgãos públicos. A atuação não garante descontos, quitação, suspensão de medidas ou regularização. As decisões e condições cabem às instituições responsáveis.</small>
+  <small>© <span id="yearNow"></span> AUTIVRA. Todos os direitos reservados.</small>
 </div></footer>
-<a class="whats" href="https://wa.me/11959329691?text=Ol%C3%A1%2C%20quero%20conversar%20sobre%20a%20situa%C3%A7%C3%A3o%20do%20meu%20ve%C3%ADculo." target="_blank" rel="noopener noreferrer" aria-label="Falar com a Quita-o pelo WhatsApp">WhatsApp ↗</a>
+<a class="whats" href="https://wa.me/11959329691?text=Ol%C3%A1%2C%20quero%20conversar%20sobre%20a%20situa%C3%A7%C3%A3o%20do%20meu%20ve%C3%ADculo." target="_blank" rel="noopener noreferrer" aria-label="Falar com a AUTIVRA pelo WhatsApp">WhatsApp ↗</a>
 <script>
   const WHATSAPP_NUMBER = "11959329691";
   const menuButton = document.getElementById("mobileToggle");
@@ -118,6 +163,24 @@
     window.open(url,"_blank","noopener,noreferrer");
     document.getElementById("formNotice").textContent="O WhatsApp foi aberto. Revise a mensagem e toque em enviar.";
   });
+
+const reduceMotion=window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+if(!reduceMotion){
+ const glow=document.createElement("div");glow.className="cursor-glow";document.body.appendChild(glow);
+ let px=innerWidth/2,py=innerHeight/2,raf=0;
+ window.addEventListener("pointermove",e=>{px=e.clientX;py=e.clientY;if(!raf)raf=requestAnimationFrame(()=>{glow.style.left=px+"px";glow.style.top=py+"px";raf=0;});},{passive:true});
+ const hero=document.querySelector(".hero");
+ window.addEventListener("scroll",()=>{const y=scrollY;if(hero&&y<innerHeight*1.2)hero.style.backgroundPosition="center calc(58% + "+(y*.16)+"px)";},{passive:true});
+ document.querySelectorAll(".service,.step,.visual,.presenter-frame").forEach(card=>{
+  card.addEventListener("pointermove",e=>{if(e.pointerType==="touch")return;const r=card.getBoundingClientRect(),x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;card.style.transform="perspective(900px) rotateX("+(-y*4)+"deg) rotateY("+(x*5)+"deg) translateY(-4px)";});
+  card.addEventListener("pointerleave",()=>{card.style.transform="";});
+ });
+ document.querySelectorAll(".btn").forEach(btn=>{
+  btn.addEventListener("pointermove",e=>{const r=btn.getBoundingClientRect(),x=e.clientX-r.left-r.width/2,y=e.clientY-r.top-r.height/2;btn.style.transform="translate("+x*.08+"px,"+y*.12+"px)";});
+  btn.addEventListener("pointerleave",()=>{btn.style.transform="";});
+ });
+}
+
 </script>
 </body>
 </html>
