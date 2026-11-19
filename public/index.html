@@ -57,6 +57,32 @@ body{background:#07090b}
 @media(prefers-reduced-motion:reduce){.hero{background-attachment:scroll}.cursor-glow{display:none}}
 
   
+/* Formulário completo AUTIVRA */
+.formbox{padding:clamp(22px,3vw,38px);width:100%;min-width:0}
+.form-intro{padding-bottom:24px;border-bottom:1px solid rgba(183,255,60,.18);margin-bottom:8px}
+.form-intro h3{font:800 clamp(1.45rem,2.5vw,2rem)/1.15 Manrope,sans-serif;margin:10px 0 7px;letter-spacing:-.04em}
+.form-intro p,.form-section-title p{color:#aab5a7;font-size:.9rem;margin:0}
+.form-section{padding:26px 0;border-bottom:1px solid rgba(255,255,255,.09)}
+.form-section:last-of-type{border-bottom:0}
+.form-section-title{display:flex;align-items:center;gap:15px;margin-bottom:20px}
+.form-section-title>span{display:grid;place-items:center;width:43px;height:43px;flex:0 0 43px;border:1px solid rgba(183,255,60,.55);border-radius:7px;color:var(--acid);font:800 1rem Manrope;background:rgba(183,255,60,.07)}
+.form-section-title h3{font:800 1.2rem Manrope;margin:0 0 3px}
+.formgrid{gap:17px 14px}
+.field{min-width:0}
+.field label{font-size:.88rem;color:#f0f4ec;font-weight:700}
+.field label b,.consent b{color:var(--acid)}
+.field input,.field select,.field textarea{min-height:49px;border:1px solid #354237;border-radius:6px;background:#090e0b;color:#f7f9f4;padding:13px 14px;transition:border-color .2s,box-shadow .2s}
+.field input::placeholder,.field textarea::placeholder{color:#788477}
+.field input:focus,.field select:focus,.field textarea:focus{border-color:var(--acid);box-shadow:0 0 0 3px rgba(183,255,60,.1)}
+.field select:invalid{color:#aab5a7}
+.field small,.form-help{color:#9ca99a;font-size:.78rem;line-height:1.5}
+.form-help{margin:14px 0 0}
+.form-section .field.full{grid-column:1/-1}
+.formbox .consent{margin:22px 0;padding:14px;border:1px solid rgba(183,255,60,.15);border-radius:6px;background:rgba(183,255,60,.035)}
+.formbox .consent input{flex:0 0 auto}
+.formbox>.btn{min-height:54px;font-size:.95rem}
+@media(max-width:560px){.formbox{padding:20px 16px}.form-section{padding:22px 0}.formgrid{grid-template-columns:1fr}.form-section .field.full{grid-column:auto}.form-section-title{gap:11px}.form-section-title>span{width:39px;height:39px;flex-basis:39px}}
+
 /* Refinamento de marcas e vídeos */
 .brands{gap:14px;align-items:stretch;margin-top:30px}
 .brand-pill{appearance:none;position:relative;display:flex;align-items:center;gap:12px;min-height:66px;padding:13px 19px;border:1px solid rgba(183,255,60,.3);border-radius:8px;background:linear-gradient(145deg,rgba(30,40,34,.96),rgba(12,18,15,.98));color:#f3f8ed;font:800 .94rem Manrope,sans-serif;letter-spacing:.15px;box-shadow:inset 0 1px 0 rgba(255,255,255,.07),0 8px 22px rgba(0,0,0,.2);cursor:pointer;transition:transform .28s,border-color .28s,background .28s,box-shadow .28s}
@@ -137,17 +163,43 @@ body{background:#07090b}
 <section class="section alt" id="contato"><div class="wrap split">
   <div class="reveal"><div class="eyebrow">Vamos conversar</div><h2>Comece com uma análise da sua situação.</h2><p class="muted">Preencha os campos ao lado. Ao enviar, você será direcionado ao WhatsApp para revisar e encaminhar a mensagem.</p><p class="muted">Não solicitamos senha bancária, código de acesso ou documentos pessoais neste formulário.</p></div>
   <form class="formbox reveal" id="leadForm">
-    <div class="formgrid">
-      <div class="field"><label for="name">Seu nome</label><input id="name" name="name" autocomplete="name" required maxlength="90" placeholder="Como podemos chamar você?"></div>
-      <div class="field"><label for="phone">WhatsApp com DDD</label><input id="phone" name="phone" type="tel" autocomplete="tel" required maxlength="16" placeholder="(11) 99999-9999"></div>
-      <div class="field"><label for="vehicle">Marca e modelo</label><input id="vehicle" name="vehicle" required maxlength="90" placeholder="Ex.: Fiat Argo"></div>
-      <div class="field"><label for="year">Ano do veículo</label><input id="year" name="year" inputmode="numeric" maxlength="4" placeholder="Ex.: 2020"></div>
-      <div class="field"><label for="debt">Tipo de débito</label><select id="debt" name="debt" required><option value="">Selecione</option><option>Financiamento em atraso</option><option>Busca e apreensão / parcelas vencidas</option><option>IPVA / licenciamento / multas</option><option>Outro tipo de débito</option><option>Não sei informar</option></select></div>
-      <div class="field"><label for="amount">Valor aproximado (opcional)</label><input id="amount" name="amount" inputmode="decimal" placeholder="Ex.: R$ 8.000"></div>
-      <div class="field full"><label for="notes">Observações (opcional)</label><textarea id="notes" name="notes" maxlength="500" placeholder="Conte brevemente o que aconteceu. Não informe dados sensíveis."></textarea></div>
-    </div>
-    <label class="consent"><input type="checkbox" id="consent" required><span>Autorizo o uso dos dados informados para retorno sobre esta solicitação, conforme a Política de Privacidade.</span></label>
-    <button class="btn" type="submit" style="width:100%">Continuar pelo WhatsApp <span aria-hidden="true">→</span></button>
+    <div class="form-intro"><span class="eyebrow">FORMULÁRIO DE ATENDIMENTO</span><h3>Vamos entender sua situação.</h3><p>Preencha o que souber. Os campos marcados como opcionais podem ficar em branco.</p></div>
+    <section class="form-section" aria-labelledby="dados-title">
+      <div class="form-section-title"><span>01</span><div><h3 id="dados-title">Seus dados</h3><p>Como podemos entrar em contato?</p></div></div>
+      <div class="formgrid">
+        <div class="field full"><label for="name">Nome completo <b>*</b></label><input id="name" name="name" autocomplete="name" required maxlength="120" placeholder="Digite seu nome completo"></div>
+        <div class="field"><label for="phone">WhatsApp para contato <b>*</b></label><input id="phone" name="phone" type="tel" autocomplete="tel" required maxlength="20" placeholder="(11) 99999-9999"></div>
+        <div class="field"><label for="email">E-mail</label><input id="email" name="email" type="email" autocomplete="email" maxlength="120" placeholder="voce@email.com"></div>
+        <div class="field"><label for="document">CPF ou CNPJ</label><input id="document" name="document" inputmode="numeric" maxlength="20" placeholder="Somente se necessário"></div>
+        <div class="field"><label for="city">Cidade e estado</label><input id="city" name="city" autocomplete="address-level2" maxlength="100" placeholder="Ex.: Belém - PA"></div>
+      </div>
+      <p class="form-help">Informe CPF/CNPJ apenas se necessário para identificar o contrato. Evite enviar documentos nesta página.</p>
+    </section>
+    <section class="form-section" aria-labelledby="veiculo-title">
+      <div class="form-section-title"><span>02</span><div><h3 id="veiculo-title">Veículo</h3><p>Informações do veículo financiado.</p></div></div>
+      <div class="formgrid">
+        <div class="field"><label for="plate">Placa do veículo</label><input id="plate" name="plate" maxlength="8" placeholder="ABC1D23"></div>
+        <div class="field"><label for="vehicle">Marca e modelo</label><input id="vehicle" name="vehicle" maxlength="100" placeholder="Ex.: Volkswagen Polo"></div>
+        <div class="field"><label for="year">Ano do veículo</label><input id="year" name="year" inputmode="numeric" maxlength="9" placeholder="Ex.: 2021/2022"></div>
+        <div class="field"><label for="lender">Banco ou financeira</label><input id="lender" name="lender" maxlength="100" placeholder="Ex.: Banco/financeira"></div>
+      </div>
+    </section>
+    <section class="form-section" aria-labelledby="financiamento-title">
+      <div class="form-section-title"><span>03</span><div><h3 id="financiamento-title">Financiamento e parcelas</h3><p>Se não souber algum dado, pode deixar sem preencher.</p></div></div>
+      <div class="formgrid">
+        <div class="field"><label for="contract">Número do contrato (se tiver)</label><input id="contract" name="contract" maxlength="80" placeholder="Número do contrato"></div>
+        <div class="field"><label for="installment">Valor aproximado da parcela</label><input id="installment" name="installment" inputmode="decimal" maxlength="30" placeholder="Ex.: R$ 1.250,00"></div>
+        <div class="field"><label for="dueDay">Dia de vencimento da parcela</label><select id="dueDay" name="dueDay"><option value="">Selecione, se souber</option><option>Dia 1</option><option>Dia 2</option><option>Dia 3</option><option>Dia 4</option><option>Dia 5</option><option>Dia 6</option><option>Dia 7</option><option>Dia 8</option><option>Dia 9</option><option>Dia 10</option><option>Dia 11</option><option>Dia 12</option><option>Dia 13</option><option>Dia 14</option><option>Dia 15</option><option>Dia 16</option><option>Dia 17</option><option>Dia 18</option><option>Dia 19</option><option>Dia 20</option><option>Dia 21</option><option>Dia 22</option><option>Dia 23</option><option>Dia 24</option><option>Dia 25</option><option>Dia 26</option><option>Dia 27</option><option>Dia 28</option><option>Dia 29</option><option>Dia 30</option><option>Dia 31</option><option>Não sei informar</option></select><small>Informe o dia do mês em que a parcela costuma vencer.</small></div>
+        <div class="field"><label for="overdue">Quantas parcelas estão atrasadas?</label><select id="overdue" name="overdue"><option value="">Selecione, se souber</option><option>Não estou em atraso</option><option>1 parcela</option><option>2 a 3 parcelas</option><option>4 a 6 parcelas</option><option>7 ou mais parcelas</option><option>Não sei informar</option></select></div>
+        <div class="field"><label for="since">Desde quando há atraso?</label><input id="since" name="since" maxlength="60" placeholder="Ex.: desde janeiro de 2026"></div>
+        <div class="field"><label for="balance">Saldo devedor aproximado (se souber)</label><input id="balance" name="balance" inputmode="decimal" maxlength="35" placeholder="Ex.: R$ 25.000,00"></div>
+        <div class="field full"><label for="notice">Recebeu alguma notificação?</label><select id="notice" name="notice"><option value="">Selecione</option><option>Não</option><option>Sim, cobrança do banco</option><option>Sim, notificação extrajudicial</option><option>Sim, processo ou busca e apreensão</option><option>Não tenho certeza</option><option>Não sei informar</option></select></div>
+        <div class="field full"><label for="objective">Qual é seu objetivo? <b>*</b></label><select id="objective" name="objective" required><option value="">Selecione uma opção</option><option>Quitação de contrato</option><option>2ª via de parcela</option><option>Regularização de parcelas em atraso</option><option>Refinanciamento de contrato (sujeito à análise)</option><option>Entender minhas opções</option><option>Outro</option></select></div>
+        <div class="field full"><label for="notes">Alguma informação adicional? (opcional)</label><textarea id="notes" name="notes" maxlength="600" placeholder="Conte brevemente algo que considere importante. Não envie documentos, senhas ou códigos."></textarea></div>
+      </div>
+    </section>
+    <label class="consent"><input type="checkbox" id="consent" required><span>Autorizo o uso dos dados informados para retorno sobre esta solicitação, conforme a Política de Privacidade. <b>*</b></span></label>
+    <button class="btn" type="submit" style="width:100%">Enviar informações pelo WhatsApp <span aria-hidden="true">→</span></button>
     <p class="notice" id="formNotice" role="status">Ao continuar, o WhatsApp será aberto para você revisar a mensagem antes de enviar.</p>
   </form>
 </div></section>
@@ -192,16 +244,15 @@ document.querySelectorAll(".brand-pill").forEach(button=>{
     const form=event.currentTarget;
     if(!form.reportValidity()) return;
     const data=new FormData(form);
-    const lines=[
-      "Olá! Quero solicitar uma análise inicial da situação do meu veículo.",
-      "Nome: "+data.get("name"),
-      "WhatsApp: "+data.get("phone"),
-      "Veículo: "+data.get("vehicle"),
-      "Ano: "+(data.get("year")||"Não informado"),
-      "Tipo de débito: "+data.get("debt"),
-      "Valor aproximado: "+(data.get("amount")||"Não informado"),
-      "Observações: "+(data.get("notes")||"Nenhuma")
+    const fields=[
+      ["Nome completo","name"],["WhatsApp","phone"],["E-mail","email"],["CPF/CNPJ","document"],["Cidade/Estado","city"],
+      ["Placa","plate"],["Marca e modelo","vehicle"],["Ano do veículo","year"],["Banco/financeira","lender"],
+      ["Número do contrato","contract"],["Valor da parcela","installment"],["Dia de vencimento","dueDay"],
+      ["Parcelas em atraso","overdue"],["Desde quando há atraso","since"],["Saldo devedor aproximado","balance"],
+      ["Notificação recebida","notice"],["Objetivo","objective"],["Informações adicionais","notes"]
     ];
+    const lines=["Olá! Quero solicitar uma análise inicial da situação do meu veículo."];
+    fields.forEach(([label,key])=>{const value=String(data.get(key)||"").trim();if(value)lines.push(label+": "+value);});
     const url="https://wa.me/"+WHATSAPP_NUMBER+"?text="+encodeURIComponent(lines.join("\n"));
     window.open(url,"_blank","noopener,noreferrer");
     document.getElementById("formNotice").textContent="O WhatsApp foi aberto. Revise a mensagem e toque em enviar.";
