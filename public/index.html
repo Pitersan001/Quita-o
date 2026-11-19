@@ -56,6 +56,24 @@ body{background:#07090b}
 @media(max-width:560px){.section{padding:82px 0}.hero h1{font-size:clamp(3rem,15vw,5rem)}.cinema-content{padding:80px 0}.presenter-frame{min-height:340px}}
 @media(prefers-reduced-motion:reduce){.hero{background-attachment:scroll}.cursor-glow{display:none}}
 
+  
+/* Refinamento de marcas e vídeos */
+.brands{gap:14px;align-items:stretch;margin-top:30px}
+.brand-pill{appearance:none;position:relative;display:flex;align-items:center;gap:12px;min-height:66px;padding:13px 19px;border:1px solid rgba(183,255,60,.3);border-radius:8px;background:linear-gradient(145deg,rgba(30,40,34,.96),rgba(12,18,15,.98));color:#f3f8ed;font:800 .94rem Manrope,sans-serif;letter-spacing:.15px;box-shadow:inset 0 1px 0 rgba(255,255,255,.07),0 8px 22px rgba(0,0,0,.2);cursor:pointer;transition:transform .28s,border-color .28s,background .28s,box-shadow .28s}
+.brand-pill:hover,.brand-pill:focus-visible{transform:translateY(-5px);border-color:var(--acid);background:linear-gradient(145deg,rgba(47,65,39,.98),rgba(15,25,15,.98));box-shadow:0 12px 30px rgba(183,255,60,.16),inset 0 1px 0 rgba(255,255,255,.12);outline:none}
+.brand-pill.active{border-color:var(--acid);box-shadow:0 0 0 2px rgba(183,255,60,.17),0 12px 30px rgba(183,255,60,.12)}
+.brand-symbol{display:grid;place-items:center;min-width:34px;height:34px;padding:0 5px;border-radius:6px;background:var(--acid);color:#10170a;font-size:.72rem;font-weight:900;letter-spacing:-.5px;box-shadow:0 3px 12px rgba(183,255,60,.2)}
+.brand-hint{font-size:.8rem;color:#9eaa9a;margin-top:14px}
+.cinema-backdrop iframe{display:none}
+.cinema-video{position:absolute;top:50%;left:50%;width:100%;height:100%;object-fit:cover;transform:translate(-50%,-50%);opacity:.82}
+.presenter-frame{min-height:420px;padding:0;background:#050709;border-radius:8px;box-shadow:0 28px 80px rgba(0,0,0,.35)}
+.presenter-video-wrap{position:absolute;inset:0;background:#050709}
+.presenter-video{width:100%;height:100%;display:block;object-fit:cover}
+.video-caption{position:absolute;left:22px;top:20px;z-index:2;display:flex;align-items:center;gap:9px;padding:10px 13px;border:1px solid rgba(183,255,60,.3);border-radius:30px;background:rgba(5,9,7,.72);backdrop-filter:blur(12px);color:#f2f7ed;font-size:.68rem;font-weight:800;letter-spacing:1.5px;pointer-events:none}
+.video-live-dot{width:8px;height:8px;border-radius:50%;background:var(--acid);box-shadow:0 0 14px var(--acid)}
+#apresentacao .section-head{margin-bottom:34px}
+@media(max-width:560px){.brand-pill{flex:1 1 calc(50% - 8px);justify-content:flex-start;padding:11px 12px;font-size:.84rem}.presenter-frame{min-height:270px}}
+
   </style>
 </head>
 <body>
@@ -82,15 +100,30 @@ body{background:#07090b}
   </div>
 </div></section>
 <section class="cinema" id="experiencia">
-<div class="cinema-backdrop"><iframe src="https://www.youtube-nocookie.com/embed/zGBPy-Zgxqs?autoplay=1&mute=1&controls=0&loop=1&playlist=zGBPy-Zgxqs&modestbranding=1&playsinline=1" title="Vídeo cinematográfico de carros em movimento" allow="autoplay; encrypted-media; picture-in-picture" loading="lazy"></iframe><div class="cinema-shade"></div></div>
-<div class="wrap cinema-content"><div class="eyebrow">AUTIVRA • MOVIMENTO E TRANSPARÊNCIA</div><h2>Seu próximo capítulo começa com <em>clareza.</em></h2><p>Assista, conheça nosso jeito de trabalhar e entenda como uma análise inicial pode ajudar você a avaliar os próximos passos.</p><a class="btn" href="#contato">Quero conversar <span aria-hidden="true">↗</span></a><small>Imagens ilustrativas de direção noturna • Vídeo: Stockroll / YouTube (licença CC BY 4.0; crédito ao autor).</small></div>
+<div class="cinema-backdrop"><video class="cinema-video" autoplay muted loop playsinline preload="metadata" poster="https://images.pexels.com/videos/9829780/free-video-9829780.jpg?auto=compress&cs=tinysrgb&w=1600"><source src="https://videos.pexels.com/video-files/9829780/9829780-hd_1920_1080_30fps.mp4" type="video/mp4"></video><div class="cinema-shade"></div></div>
+<div class="wrap cinema-content"><div class="eyebrow">AUTIVRA • MOVIMENTO E TRANSPARÊNCIA</div><h2>Seu próximo capítulo começa com <em>clareza.</em></h2><p>Assista, conheça nosso jeito de trabalhar e entenda como uma análise inicial pode ajudar você a avaliar os próximos passos.</p><a class="btn" href="#contato">Quero conversar <span aria-hidden="true">↗</span></a><small>Vídeo automotivo ilustrativo: Bogdan Krupin / Pexels.</small></div>
 </section>
 <section class="section alt" id="marcas"><div class="wrap split">
-  <div class="reveal"><div class="eyebrow">Diversos modelos e fabricantes</div><h2>Seu carro, sua realidade. Uma análise feita para o seu caso.</h2><p class="muted">Atendemos solicitações relacionadas a veículos de diferentes marcas e categorias. A análise depende das informações e das condições apresentadas pelo credor.</p><div class="brands" aria-label="Marcas de veículos"><span class="brand-pill">Volkswagen</span><span class="brand-pill">Fiat</span><span class="brand-pill">Jeep</span><span class="brand-pill">Peugeot</span><span class="brand-pill">Citroën</span><span class="brand-pill">Outras marcas</span></div></div>
+  <div class="reveal"><div class="eyebrow">Diversos modelos e fabricantes</div><h2>Seu carro, sua realidade. Uma análise feita para o seu caso.</h2><p class="muted">Atendemos solicitações relacionadas a veículos de diferentes marcas e categorias. A análise depende das informações e das condições apresentadas pelo credor.</p><div class="brands" aria-label="Selecione a marca do veículo">
+<button class="brand-pill" type="button" data-brand="Volkswagen"><span class="brand-symbol">VW</span>Volkswagen</button>
+<button class="brand-pill" type="button" data-brand="Fiat"><span class="brand-symbol">FIAT</span>Fiat</button>
+<button class="brand-pill" type="button" data-brand="Jeep"><span class="brand-symbol">J</span>Jeep</button>
+<button class="brand-pill" type="button" data-brand="Peugeot"><span class="brand-symbol">PEU</span>Peugeot</button>
+<button class="brand-pill" type="button" data-brand="Citroën"><span class="brand-symbol">C</span>Citroën</button>
+<button class="brand-pill" type="button" data-brand="Outras marcas"><span class="brand-symbol">+</span>Outras marcas</button>
+</div><p class="brand-hint">Escolha uma marca para preencher o formulário automaticamente.</p></div>
   <div class="visual reveal" role="img" aria-label="Fotografia de automóvel em cenário urbano"><span class="visual-label">Mobilidade • Planejamento • Novos caminhos</span></div>
 </div></section>
 <section class="section" id="apresentacao"><div class="wrap split presenter-layout">
-<div class="presenter-frame reveal"><div class="presenter-placeholder"><span class="play-orb">▶</span><span class="presenter-tag">APRESENTAÇÃO AUTIVRA</span><p>Um espaço para a nossa equipe explicar, em vídeo, como funciona a análise e a renegociação.</p><a href="#contato" class="btn ghost">Fale com nossa equipe</a></div></div>
+<div class="presenter-frame reveal">
+  <div class="presenter-video-wrap">
+    <video class="presenter-video" controls playsinline preload="metadata" poster="https://images.pexels.com/videos/6380711/free-video-6380711.jpg?auto=compress&cs=tinysrgb&w=1400">
+      <source src="https://videos.pexels.com/video-files/6380711/6380711-uhd_3840_2160_25fps.mp4" type="video/mp4">
+      Seu navegador não conseguiu carregar o vídeo. <a href="https://www.pexels.com/video/aerial-shot-of-a-car-driving-6380711/">Assista ao vídeo no Pexels</a>.
+    </video>
+    <div class="video-caption"><span class="video-live-dot"></span> AUTIVRA • EXPERIÊNCIA EM MOVIMENTO</div>
+  </div>
+</div>
 <div class="reveal"><div class="eyebrow">Sem complicação, sem promessas vazias</div><h2>Entender o caminho é o primeiro passo.</h2><p class="muted">Na AUTIVRA, o primeiro contato começa com uma conversa. Entendemos o cenário, explicamos quais alternativas podem existir e orientamos você a avaliar as condições diretamente com os credores.</p><p class="muted"><strong>Importante:</strong> cada caso depende da análise e das condições da instituição credora. Não prometemos descontos, aprovação ou resultados.</p><a class="btn" href="#contato">Começar minha análise <span aria-hidden="true">→</span></a><p class="notice">Para publicar o vídeo de uma pessoa apresentando a empresa, envie a gravação real do representante autorizado. Não colocamos um depoimento ou porta-voz fictício.</p></div></div></section>
 <section class="section" id="processo"><div class="wrap">
   <div class="section-head reveal"><div class="eyebrow">Simples e direto</div><h2>Como funciona o atendimento</h2><p>Você começa com algumas informações básicas. Não envie documentos ou senhas pelo formulário.</p></div>
@@ -129,13 +162,23 @@ body{background:#07090b}
 </div></section>
 </main>
 <footer class="footer"><div class="wrap">
-  <div class="footerrow"><a class="brand" href="#inicio">quita<span>-o</span>.</a><div class="footerlinks"><a href="#privacidade">Privacidade</a><a href="#termos">Termos de uso</a><a href="#contato">Contato</a></div></div>
+  <div class="footerrow"><a class="brand" href="#inicio" aria-label="AUTIVRA início">AUTIVRA<span>.</span></a><div class="footerlinks"><a href="#privacidade">Privacidade</a><a href="#termos">Termos de uso</a><a href="#contato">Contato</a></div></div>
   <small id="privacidade"><strong>Privacidade:</strong> os dados preenchidos são usados para preparar seu contato pelo WhatsApp. O formulário não envia automaticamente os dados para um banco de dados. Evite incluir informações sensíveis. Você pode solicitar esclarecimentos pelo canal de atendimento.</small>
   <small id="termos"><strong>Termos e aviso:</strong> a AUTIVRA é uma assessoria independente. Não possui vínculo oficial ou representação de Volkswagen, Stellantis, bancos, financeiras, credores ou órgãos públicos. A atuação não garante descontos, quitação, suspensão de medidas ou regularização. As decisões e condições cabem às instituições responsáveis.</small>
   <small>© <span id="yearNow"></span> AUTIVRA. Todos os direitos reservados.</small>
 </div></footer>
 <a class="whats" href="https://wa.me/11959329691?text=Ol%C3%A1%2C%20quero%20conversar%20sobre%20a%20situa%C3%A7%C3%A3o%20do%20meu%20ve%C3%ADculo." target="_blank" rel="noopener noreferrer" aria-label="Falar com a AUTIVRA pelo WhatsApp">WhatsApp ↗</a>
 <script>
+
+document.querySelectorAll(".brand-pill").forEach(button=>{
+ button.addEventListener("click",()=>{
+  document.querySelectorAll(".brand-pill").forEach(b=>b.classList.remove("active"));
+  button.classList.add("active");
+  const vehicle=document.getElementById("vehicle");
+  if(vehicle){const brand=button.dataset.brand;vehicle.value=brand==="Outras marcas"?"":brand+" ";vehicle.focus();document.getElementById("contato").scrollIntoView({behavior:"smooth",block:"center"});}
+ });
+});
+
   const WHATSAPP_NUMBER = "11959329691";
   const menuButton = document.getElementById("mobileToggle");
   const nav = document.getElementById("navlinks");
