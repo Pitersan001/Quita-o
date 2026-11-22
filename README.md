@@ -41,3 +41,5 @@ Depois disso, novos commits na branch `main` acionam novas publicações. Config
 ## Imagens
 
 O layout inicial usa uma composição gráfica CSS como fallback visual. A geração da fotografia automotiva pelo Runway não foi concluída nesta etapa porque o espaço de trabalho conectado estava sem créditos. Assim que houver créditos disponíveis, gerar uma imagem automotiva original e adicioná-la em `public/assets/`, atualizando o CSS da seção hero.
+
+<!-- Atualização de publicação do site -->
