@@ -1,280 +1,55 @@
 <!doctype html>
 <html lang="pt-BR">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#090d14">
-  <meta name="description" content="A Quita-o oferece orientação independente para quem busca negociar débitos e encontrar caminhos para regularizar seu veículo.">
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="Quita-o | Uma nova oportunidade para seu veículo">
-  <meta property="og:description" content="Entenda suas opções e converse com nossa equipe sobre a situação do seu veículo.">
-  <title>Quita-o | Seu veículo merece uma nova oportunidade</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <style>
-    :root{--bg:#090d14;--panel:#101722;--panel2:#151f2c;--line:rgba(255,255,255,.1);--muted:#a6b0bf;--white:#f7f9fc;--blue:#70b7ff;--blue2:#247bd0;--gold:#c9a76a;--max:1180px}
-    *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:86px}body{margin:0;background:var(--bg);color:var(--white);font-family:"DM Sans",sans-serif;line-height:1.6}a{color:inherit;text-decoration:none}button,input,select,textarea{font:inherit}.wrap{width:min(var(--max),calc(100% - 44px));margin:auto}.topbar{position:sticky;top:0;z-index:20;background:rgba(8,12,19,.88);backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}.nav{height:78px;display:flex;align-items:center;justify-content:space-between}.brand{font:800 1.55rem Manrope,sans-serif;letter-spacing:-1px}.brand span{color:var(--blue)}.navlinks{display:flex;gap:30px;color:#c5ced9;font-size:.92rem}.navlinks a:hover{color:var(--blue)}.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:14px 21px;border-radius:7px;background:linear-gradient(135deg,#82c4ff,#398fe0);color:#06101c;font-weight:800;border:0;cursor:pointer;transition:transform .2s,filter .2s}.btn:hover{transform:translateY(-2px);filter:brightness(1.08)}.btn.ghost{background:transparent;color:#e9f3ff;border:1px solid rgba(130,196,255,.45)}.hero{position:relative;overflow:hidden;min-height:690px;display:flex;align-items:center;background:#090d14 url("https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=2200&q=85") center 58%/cover no-repeat}.hero:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(7,11,17,.97) 0%,rgba(7,11,17,.88) 38%,rgba(7,11,17,.48) 68%,rgba(7,11,17,.22) 100%),linear-gradient(0deg,rgba(7,11,17,.45),transparent 45%)}.hero:after{content:"";position:absolute;width:54vw;height:54vw;max-width:760px;max-height:760px;right:-9%;top:8%;border:1px solid rgba(125,188,243,.12);border-radius:50%;box-shadow:0 0 0 46px rgba(125,188,243,.025),0 0 0 92px rgba(125,188,243,.02)}.hero-inner{position:relative;z-index:1;padding:110px 0 120px;max-width:720px}.eyebrow{color:var(--blue);font-weight:700;letter-spacing:2.4px;text-transform:uppercase;font-size:.76rem}.hero h1{font:800 clamp(2.8rem,6.2vw,5.4rem)/1.04 Manrope,sans-serif;letter-spacing:-3px;margin:20px 0 22px}.hero h1 em{font-style:normal;color:var(--blue)}.hero p{font-size:1.13rem;color:#c3ccd7;max-width:590px;margin:0 0 32px}.hero-actions{display:flex;gap:14px;flex-wrap:wrap}.trustline{display:flex;gap:25px;flex-wrap:wrap;margin-top:54px;color:#b4c0cf;font-size:.88rem}.trustline span:before{content:"✓";color:var(--blue);font-weight:800;margin-right:9px}.section{padding:100px 0}.section.alt{background:#0d131d}.section-head{max-width:690px;margin-bottom:48px}.section h2{font:800 clamp(2rem,4vw,3.25rem)/1.13 Manrope,sans-serif;letter-spacing:-1.5px;margin:12px 0 16px}.section-head p,.muted{color:var(--muted)}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.service,.step,.faq-item{background:linear-gradient(145deg,rgba(23,34,48,.92),rgba(13,20,30,.92));border:1px solid var(--line);border-radius:12px;padding:27px}.service .num{font:800 1rem Manrope;color:var(--blue)}.service h3,.step h3{font:700 1.18rem Manrope;margin:16px 0 9px}.service p,.step p{color:var(--muted);font-size:.95rem;margin:0}.brands{display:flex;gap:12px;flex-wrap:wrap}.brand-pill{padding:13px 19px;border:1px solid var(--line);border-radius:7px;color:#d8e0e9;background:rgba(255,255,255,.025);font-weight:700}.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.step .num{font:800 2rem Manrope;color:var(--blue);opacity:.9}.split{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}.visual{min-height:390px;border-radius:14px;border:1px solid rgba(117,183,239,.2);background:linear-gradient(0deg,rgba(7,12,19,.8),rgba(7,12,19,.08)),url("https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=1400&q=85") center/cover no-repeat;position:relative;overflow:hidden}.visual:before,.visual:after{display:none}.visual-label{position:absolute;z-index:2;left:25px;bottom:22px;color:#d5e8fb;font-size:.75rem;letter-spacing:1.5px;text-transform:uppercase}.formbox{background:#111a26;border:1px solid var(--line);border-radius:14px;padding:32px}.formgrid{display:grid;grid-template-columns:1fr 1fr;gap:16px}.field{display:flex;flex-direction:column;gap:7px}.field.full{grid-column:1/-1}.field label{font-size:.86rem;color:#d9e2ec;font-weight:600}.field input,.field select,.field textarea{width:100%;border:1px solid #2a394b;border-radius:7px;padding:13px 14px;background:#0b121c;color:white;outline:none}.field input:focus,.field select:focus,.field textarea:focus{border-color:var(--blue)}.field textarea{min-height:95px;resize:vertical}.consent{display:flex;align-items:flex-start;gap:10px;color:#aeb9c7;font-size:.82rem;margin:18px 0}.consent input{margin-top:5px;accent-color:var(--blue)}.faq{display:grid;gap:12px}.faq-item summary{font-weight:700;cursor:pointer}.faq-item p{color:var(--muted);margin-bottom:0}.footer{padding:50px 0 30px;background:#070a10;border-top:1px solid var(--line)}.footerrow{display:flex;justify-content:space-between;gap:30px;flex-wrap:wrap}.footer small{display:block;color:#8995a4;margin-top:24px;max-width:850px}.footerlinks{display:flex;gap:20px;color:#b6c2d0;font-size:.9rem}.whats{position:fixed;right:22px;bottom:22px;z-index:30;border-radius:50px;padding:14px 18px;background:#1caa68;color:#fff;font-weight:800;box-shadow:0 10px 30px #0008}.reveal{opacity:0;transform:translateY(18px);transition:opacity .65s ease,transform .65s ease}.reveal.visible{opacity:1;transform:none}.notice{font-size:.84rem;color:#a9b5c4;margin-top:14px}.mobile-toggle{display:none;background:none;border:1px solid var(--line);color:white;border-radius:6px;padding:8px 12px}
-    @media(max-width:850px){.navlinks{display:none;position:absolute;top:78px;left:0;right:0;background:#0b111a;padding:22px;flex-direction:column;gap:16px;border-bottom:1px solid var(--line)}.navlinks.open{display:flex}.mobile-toggle{display:block}.nav>.btn{display:none}.hero{min-height:620px}.hero-inner{padding:90px 0}.grid{grid-template-columns:1fr 1fr}.steps{grid-template-columns:1fr 1fr}.split{grid-template-columns:1fr;gap:32px}.visual{min-height:280px}}
-    @media(max-width:560px){.wrap{width:min(var(--max),calc(100% - 32px))}.hero h1{letter-spacing:-1.8px}.hero{min-height:600px}.section{padding:74px 0}.grid,.steps,.formgrid{grid-template-columns:1fr}.field.full{grid-column:auto}.formbox{padding:22px}.trustline{gap:12px;flex-direction:column}.footerlinks{flex-wrap:wrap}.whats{right:14px;bottom:14px}}
-    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}.reveal{opacity:1;transform:none}}
-  
-:root{--blue:#b7ff3c;--blue2:#86d91e;--acid:#b7ff3c;--bg:#07090b}
-body{background:#07090b}
-.brand{font-size:1.72rem;letter-spacing:-1.7px}.brand span{color:var(--acid)}
-.topbar{background:rgba(5,8,10,.72);backdrop-filter:blur(22px);border-bottom-color:rgba(183,255,60,.16)}
-.btn{background:var(--acid);color:#0a1005;border-radius:4px;box-shadow:0 8px 30px rgba(183,255,60,.12);transition:transform .25s,box-shadow .25s}
-.btn:hover{transform:translateY(-4px) scale(1.025);box-shadow:0 14px 38px rgba(183,255,60,.24)}
-.btn.ghost{border-color:rgba(183,255,60,.48);color:#f4f7f0}.eyebrow{color:var(--acid);letter-spacing:3px}
-.hero{min-height:790px;background-position:center;background-attachment:fixed}
-.hero:before{background:linear-gradient(90deg,rgba(3,6,8,.94),rgba(3,6,8,.67) 48%,rgba(3,6,8,.08)),linear-gradient(0deg,rgba(3,6,8,.72),transparent 50%)}
-.hero:after{border-color:rgba(183,255,60,.2);box-shadow:0 0 0 55px rgba(183,255,60,.035),0 0 0 110px rgba(183,255,60,.025)}
-.hero h1{font-size:clamp(3.2rem,7.8vw,7.2rem);letter-spacing:-.075em;line-height:.96;text-wrap:balance}
-.hero h1 em,.section h2 em{color:var(--acid);font-style:normal}.hero p{font-size:1.18rem;max-width:530px}
-.section{padding:125px 0}.section h2{font-size:clamp(2.4rem,5vw,4.2rem);letter-spacing:-.065em}
-.service,.step,.faq-item,.formbox{border-radius:5px;background:linear-gradient(145deg,#13191d,#0b0f12);border-color:rgba(183,255,60,.15);transition:transform .35s,border-color .35s,box-shadow .35s}
-.service:hover,.step:hover{border-color:rgba(183,255,60,.6);box-shadow:0 25px 60px #0008}
-.brand-pill{border-radius:3px;border-color:#39433a}.visual{border-radius:4px}
-.cinema{position:relative;min-height:690px;display:flex;align-items:center;overflow:hidden;background:#050709}
-.cinema-backdrop,.cinema-shade{position:absolute;inset:0}
-.cinema-backdrop iframe{position:absolute;top:50%;left:50%;width:120vw;height:67.5vw;min-width:100%;min-height:100%;transform:translate(-50%,-50%);border:0;pointer-events:none;opacity:.78}
-.cinema-shade{background:linear-gradient(90deg,rgba(4,7,8,.92),rgba(4,7,8,.42) 60%,rgba(4,7,8,.55)),linear-gradient(0deg,#07090b,transparent 35%)}
-.cinema-content{position:relative;z-index:2;padding:110px 0}
-.cinema-content h2{font:800 clamp(2.8rem,6vw,5.4rem)/1 Manrope,sans-serif;letter-spacing:-.07em;max-width:780px;margin:22px 0}
-.cinema-content h2 em{color:var(--acid);font-style:normal}.cinema-content p{max-width:570px;color:#d3d9d2;font-size:1.1rem;margin-bottom:28px}
-.cinema-content small{display:block;margin-top:28px;color:#9ca69a;font-size:.72rem}
-.presenter-frame{min-height:430px;position:relative;overflow:hidden;background:radial-gradient(circle at 60% 30%,rgba(183,255,60,.2),transparent 35%),linear-gradient(135deg,#1b2420,#080b0a 65%);border:1px solid rgba(183,255,60,.24);display:grid;place-items:center}
-.presenter-placeholder{text-align:center;padding:36px;max-width:440px}.presenter-placeholder p{color:#d2dbd1;margin:22px 0}
-.presenter-tag{display:block;color:var(--acid);font-size:.72rem;letter-spacing:3px;font-weight:800;margin-top:22px}
-.play-orb{display:grid;place-items:center;width:78px;height:78px;margin:auto;border:1px solid var(--acid);border-radius:50%;color:var(--acid);box-shadow:0 0 0 14px rgba(183,255,60,.07),0 0 55px rgba(183,255,60,.16);font-size:1.2rem}
-.presenter-layout{gap:70px}.whats{background:var(--acid);color:#091006;box-shadow:0 10px 40px rgba(183,255,60,.2);border-radius:4px}
-.reveal{opacity:0;transform:translateY(42px) scale(.985);transition:opacity .85s,transform .85s}
-.reveal.visible{opacity:1;transform:translateY(0) scale(1)}
-.cursor-glow{position:fixed;z-index:1;pointer-events:none;width:340px;height:340px;border-radius:50%;background:radial-gradient(circle,rgba(183,255,60,.075),transparent 68%);transform:translate(-50%,-50%);opacity:0}
-@media(hover:hover) and (pointer:fine){body:hover .cursor-glow{opacity:1}}
-@media(max-width:850px){.hero{background-attachment:scroll;min-height:690px}.cinema{min-height:560px}.presenter-layout{gap:32px}.cinema-backdrop iframe{width:180vw;height:101vw}}
-@media(max-width:560px){.section{padding:82px 0}.hero h1{font-size:clamp(3rem,15vw,5rem)}.cinema-content{padding:80px 0}.presenter-frame{min-height:340px}}
-@media(prefers-reduced-motion:reduce){.hero{background-attachment:scroll}.cursor-glow{display:none}}
-
-  
-/* Formulário completo Quita-o */
-.formbox{padding:clamp(22px,3vw,38px);width:100%;min-width:0}
-.form-intro{padding-bottom:24px;border-bottom:1px solid rgba(183,255,60,.18);margin-bottom:8px}
-.form-intro h3{font:800 clamp(1.45rem,2.5vw,2rem)/1.15 Manrope,sans-serif;margin:10px 0 7px;letter-spacing:-.04em}
-.form-intro p,.form-section-title p{color:#aab5a7;font-size:.9rem;margin:0}
-.form-section{padding:26px 0;border-bottom:1px solid rgba(255,255,255,.09)}
-.form-section:last-of-type{border-bottom:0}
-.form-section-title{display:flex;align-items:center;gap:15px;margin-bottom:20px}
-.form-section-title>span{display:grid;place-items:center;width:43px;height:43px;flex:0 0 43px;border:1px solid rgba(183,255,60,.55);border-radius:7px;color:var(--acid);font:800 1rem Manrope;background:rgba(183,255,60,.07)}
-.form-section-title h3{font:800 1.2rem Manrope;margin:0 0 3px}
-.formgrid{gap:17px 14px}
-.field{min-width:0}
-.field label{font-size:.88rem;color:#f0f4ec;font-weight:700}
-.field label b,.consent b{color:var(--acid)}
-.field input,.field select,.field textarea{min-height:49px;border:1px solid #354237;border-radius:6px;background:#090e0b;color:#f7f9f4;padding:13px 14px;transition:border-color .2s,box-shadow .2s}
-.field input::placeholder,.field textarea::placeholder{color:#788477}
-.field input:focus,.field select:focus,.field textarea:focus{border-color:var(--acid);box-shadow:0 0 0 3px rgba(183,255,60,.1)}
-.field select:invalid{color:#aab5a7}
-.field small,.form-help{color:#9ca99a;font-size:.78rem;line-height:1.5}
-.form-help{margin:14px 0 0}
-.form-section .field.full{grid-column:1/-1}
-.formbox .consent{margin:22px 0;padding:14px;border:1px solid rgba(183,255,60,.15);border-radius:6px;background:rgba(183,255,60,.035)}
-.formbox .consent input{flex:0 0 auto}
-.formbox>.btn{min-height:54px;font-size:.95rem}
-@media(max-width:560px){.formbox{padding:20px 16px}.form-section{padding:22px 0}.formgrid{grid-template-columns:1fr}.form-section .field.full{grid-column:auto}.form-section-title{gap:11px}.form-section-title>span{width:39px;height:39px;flex-basis:39px}}
-
-/* Refinamento de marcas e vídeos */
-.brands{gap:14px;align-items:stretch;margin-top:30px}
-.brand-pill{appearance:none;position:relative;display:flex;align-items:center;gap:12px;min-height:66px;padding:13px 19px;border:1px solid rgba(183,255,60,.3);border-radius:8px;background:linear-gradient(145deg,rgba(30,40,34,.96),rgba(12,18,15,.98));color:#f3f8ed;font:800 .94rem Manrope,sans-serif;letter-spacing:.15px;box-shadow:inset 0 1px 0 rgba(255,255,255,.07),0 8px 22px rgba(0,0,0,.2);cursor:pointer;transition:transform .28s,border-color .28s,background .28s,box-shadow .28s}
-.brand-pill:hover,.brand-pill:focus-visible{transform:translateY(-5px);border-color:var(--acid);background:linear-gradient(145deg,rgba(47,65,39,.98),rgba(15,25,15,.98));box-shadow:0 12px 30px rgba(183,255,60,.16),inset 0 1px 0 rgba(255,255,255,.12);outline:none}
-.brand-pill.active{border-color:var(--acid);box-shadow:0 0 0 2px rgba(183,255,60,.17),0 12px 30px rgba(183,255,60,.12)}
-.brand-symbol{display:grid;place-items:center;min-width:34px;height:34px;padding:0 5px;border-radius:6px;background:var(--acid);color:#10170a;font-size:.72rem;font-weight:900;letter-spacing:-.5px;box-shadow:0 3px 12px rgba(183,255,60,.2)}
-.brand-hint{font-size:.8rem;color:#9eaa9a;margin-top:14px}
-.cinema-backdrop iframe{display:none}
-.cinema-video{position:absolute;top:50%;left:50%;width:100%;height:100%;object-fit:cover;transform:translate(-50%,-50%);opacity:.82}
-.presenter-frame{min-height:420px;padding:0;background:#050709;border-radius:8px;box-shadow:0 28px 80px rgba(0,0,0,.35)}
-.presenter-video-wrap{position:absolute;inset:0;background:#050709}
-.presenter-video{width:100%;height:100%;display:block;object-fit:cover}
-.video-caption{position:absolute;left:22px;top:20px;z-index:2;display:flex;align-items:center;gap:9px;padding:10px 13px;border:1px solid rgba(183,255,60,.3);border-radius:30px;background:rgba(5,9,7,.72);backdrop-filter:blur(12px);color:#f2f7ed;font-size:.68rem;font-weight:800;letter-spacing:1.5px;pointer-events:none}
-.video-live-dot{width:8px;height:8px;border-radius:50%;background:var(--acid);box-shadow:0 0 14px var(--acid)}
-#apresentacao .section-head{margin-bottom:34px}
-@media(max-width:560px){.brand-pill{flex:1 1 calc(50% - 8px);justify-content:flex-start;padding:11px 12px;font-size:.84rem}.presenter-frame{min-height:270px}}
-
-  </style>
-</head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#192f8c">
+<meta name="description" content="Quita-o: conheça suas opções para negociar e regularizar seu financiamento. Atendimento digital e personalizado.">
+<title>Quita-o | Negocie seu financiamento</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#182f8b;--blue:#168de0;--aqua:#72c6c8;--ink:#171717;--muted:#606060;--paper:#fff;--soft:#f7f7f8}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,Arial,sans-serif;color:var(--ink);background:#fff;line-height:1.55}a{color:inherit;text-decoration:none}button,input{font:inherit}.wrap{width:min(1120px,calc(100% - 44px));margin:auto}
+header{height:102px;background:#fff;display:flex;align-items:center;position:relative;z-index:5;box-shadow:0 2px 8px #0000000c}.head{display:flex;justify-content:flex-end;align-items:center}.logo{font-size:clamp(1.55rem,4vw,2.15rem);font-weight:800;letter-spacing:.22em;color:#1d347e;line-height:1}.logo small{display:block;text-align:center;font-size:.48em;letter-spacing:.52em;font-weight:500;margin-top:14px}
+.hero{min-height:1050px;position:relative;display:flex;align-items:flex-end;background:linear-gradient(180deg,#0876d0aa,#092b8b44),url('https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=1600&q=85') center 18%/cover no-repeat}
+.hero:before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,78,160,.15) 0%,rgba(4,38,115,.1) 48%,rgba(24,47,139,.94) 100%)}
+.hero-inner{position:relative;z-index:1;padding:0 0 45px}.leadbox{width:min(630px,100%);margin:0 auto;background:rgba(255,255,255,.68);backdrop-filter:blur(8px);border-radius:14px;padding:42px 38px 50px;box-shadow:0 14px 45px #0b2b7540}
+.leadbox p{font-size:1.55rem;line-height:1.35;margin:0 0 40px;color:#101010}.leadbox input{width:100%;height:88px;border:2px solid #d6d8df;border-radius:13px;padding:0 25px;font-size:1.8rem;background:#fff;color:#222;outline:none}.leadbox input:focus{border-color:#1e91dc;box-shadow:0 0 0 4px #168de022}.leadbox input::placeholder{color:#9ca0aa}.primary{width:100%;height:90px;margin-top:38px;border:0;border-radius:12px;background:#70b9cf;color:#fff;font-weight:800;font-size:1.5rem;cursor:pointer}.primary:hover{filter:brightness(.96)}.under-hero{background:linear-gradient(120deg,#1b398e,#4d55b0);padding:18px 0 52px;color:#fff}.under-hero h2{text-align:center;font-size:1.55rem;font-weight:500;margin:0 0 28px}.channels{display:grid;gap:12px}.channel{display:flex;align-items:center;gap:20px;padding:16px 20px;background:#fff;border-radius:13px;color:#333;min-height:84px;box-shadow:0 6px 18px #101e5220}.channel .ico{font-size:2rem;color:var(--aqua)}.channel b{display:block;font-size:1.02rem}.channel span{color:#777}.section{padding:70px 0}.section h2{font-size:clamp(2.1rem,5vw,3.2rem);line-height:1.1;letter-spacing:-.05em;margin:0 0 46px}.benefits{display:grid;gap:14px}.benefit{background:#f8f8f8;display:grid;grid-template-columns:130px 1fr;align-items:center;gap:24px;padding:28px 35px;min-height:175px}.benefit .icon{font-size:3.5rem;color:#72c4c6;text-align:center}.benefit h3{font-size:1.6rem;margin:0 0 4px}.benefit p{font-size:1.45rem;line-height:1.55;margin:0}.wide-cta{display:block;margin:72px auto 0;width:100%;padding:29px 20px;text-align:center;background:#19368f;color:#fff;border-radius:15px;font-weight:800;font-size:1.8rem}
+.faq{padding-top:4px}.faq h2{margin-bottom:45px}.faq details{border-top:1px solid #eee;padding:28px 0}.faq summary{cursor:pointer;list-style:none;font-size:clamp(1.35rem,3.4vw,2rem);font-weight:700;line-height:1.45;padding-right:50px;position:relative}.faq summary::-webkit-details-marker{display:none}.faq summary:after{content:"⌄";position:absolute;right:0;top:0;width:38px;height:38px;border:2px solid #253878;border-radius:50%;display:grid;place-items:center;color:#253878;font-size:1.25rem;line-height:1}.faq details[open] summary:after{content:"⌃"}.faq details p{font-size:1.22rem;color:#5c5c5c;line-height:1.65;margin:32px 0 0}
+footer{background:#242424;color:#fff;padding:55px 0 45px}.footer-logo{font-size:clamp(2.5rem,9vw,5rem);font-weight:800;letter-spacing:-.07em;margin-bottom:24px}.footer p{font-size:1rem;margin:12px 0}.footer .dim{color:#aaa}.footer a{text-decoration:underline}.security{font-size:1.2rem;margin-top:24px}.float-actions{position:fixed;right:24px;bottom:25px;z-index:10;display:flex;flex-direction:column;align-items:center;gap:18px}.float-plus,.float-wa{border:0;border-radius:50%;display:grid;place-items:center;box-shadow:0 8px 22px #0003;cursor:pointer}.float-plus{width:74px;height:74px;background:#26366f;color:#fff;font-size:2.4rem}.float-wa{width:96px;height:96px;background:#fff;color:#fff;font-size:2.7rem}.float-wa span{width:70px;height:70px;border-radius:50%;background:#19bd55;display:grid;place-items:center}.quick-menu{display:none;position:fixed;right:24px;bottom:205px;z-index:11;background:#fff;border-radius:12px;padding:10px;box-shadow:0 8px 28px #0003;min-width:190px}.quick-menu.open{display:grid}.quick-menu a{padding:12px;color:#182f8b;font-weight:700}
+@media(min-width:900px){.hero{min-height:920px;background-position:center 35%}.hero-inner{width:100%}.leadbox{margin-left:0}.under-hero .channels{grid-template-columns:repeat(3,1fr)}.benefits{max-width:950px;margin:auto}}
+@media(max-width:600px){.wrap{width:calc(100% - 38px)}header{height:102px}.hero{min-height:1035px;background-position:53% top}.hero-inner{padding-bottom:0}.leadbox{padding:48px 38px 50px;border-radius:13px}.leadbox p{font-size:1.5rem;margin-bottom:40px}.leadbox input{height:88px;font-size:1.65rem;padding:0 24px}.primary{height:90px;font-size:1.35rem;margin-top:38px}.under-hero{padding-top:140px}.under-hero h2{font-size:1.4rem;white-space:nowrap}.channel{min-height:82px;padding:12px 18px}.section{padding:43px 0}.section h2{margin-bottom:48px}.benefit{grid-template-columns:125px 1fr;gap:18px;padding:27px 17px;min-height:0}.benefit .icon{font-size:3.4rem}.benefit h3{font-size:1.45rem}.benefit p{font-size:1.35rem}.wide-cta{margin-top:74px;padding:29px 12px;font-size:1.55rem}.faq details{padding:28px 0}.faq summary{font-size:1.45rem;padding-right:50px}.faq details p{font-size:1.15rem;margin-top:32px}.float-actions{right:17px;bottom:22px;gap:16px}.float-plus{width:74px;height:74px}.float-wa{width:96px;height:96px}}
+</style></head>
 <body>
-<header class="topbar"><div class="wrap nav">
-  <a class="brand" href="#inicio" aria-label="Quita-o início">Quita-o<span>.</span></a>
-  <nav class="navlinks" id="navlinks" aria-label="Navegação principal"><a href="#servicos">Soluções</a><a href="#marcas">Veículos</a><a href="#processo">Como funciona</a><a href="#duvidas">Dúvidas</a></nav>
-  <a class="btn" href="#contato">Fale com um especialista</a>
-  <button class="mobile-toggle" id="mobileToggle" aria-label="Abrir menu" aria-expanded="false">Menu</button>
-</div></header>
+<header><div class="wrap head"><a class="logo" href="#inicio">QUITA-O<small>NEGOCIAÇÃO DIGITAL</small></a></div></header>
 <main>
-<section class="hero" id="inicio"><div class="wrap hero-inner">
-  <div class="eyebrow">ASSESSORIA VEICULAR • NOVOS CAMINHOS</div>
-  <h1>SEU VEÍCULO MERECE UMA <em>NOVA OPORTUNIDADE.</em></h1>
-  <p>Entenda suas possibilidades para negociar débitos e buscar caminhos para regularizar seu veículo. Atendimento claro, online e sem complicação.</p>
-  <div class="hero-actions"><a class="btn" href="#contato">Quero analisar meu caso <span aria-hidden="true">→</span></a><a class="btn ghost" href="#processo">Conheça o processo</a></div>
-  <div class="trustline"><span>Atendimento online</span><span>Análise individual</span><span>Orientação transparente</span></div>
-</div></section>
-<section class="section" id="servicos"><div class="wrap">
-  <div class="section-head reveal"><div class="eyebrow">Como podemos ajudar</div><h2>Um caminho mais claro para lidar com seus débitos.</h2><p>Cada situação é diferente. Nossa assessoria ajuda você a entender o cenário e avaliar alternativas de negociação disponíveis.</p></div>
-  <div class="grid">
-    <article class="service reveal"><div class="num">01 / ANÁLISE</div><h3>Diagnóstico da situação</h3><p>Organizamos as informações iniciais do veículo e dos débitos para entender o que precisa ser avaliado.</p></article>
-    <article class="service reveal"><div class="num">02 / NEGOCIAÇÃO</div><h3>Orientação para negociar</h3><p>Ajudamos a identificar canais e possibilidades de negociação junto aos credores responsáveis.</p></article>
-    <article class="service reveal"><div class="num">03 / ACOMPANHAMENTO</div><h3>Próximos passos</h3><p>Você recebe orientação sobre os passos seguintes, documentos necessários e cuidados durante o processo.</p></article>
-  </div>
-</div></section>
-<section class="cinema" id="experiencia">
-<div class="cinema-backdrop"><video class="cinema-video" autoplay muted loop playsinline preload="metadata" poster="https://images.pexels.com/videos/9829780/free-video-9829780.jpg?auto=compress&cs=tinysrgb&w=1600"><source src="https://videos.pexels.com/video-files/9829780/9829780-hd_1920_1080_30fps.mp4" type="video/mp4"></video><div class="cinema-shade"></div></div>
-<div class="wrap cinema-content"><div class="eyebrow">Quita-o • MOVIMENTO E TRANSPARÊNCIA</div><h2>Seu próximo capítulo começa com <em>clareza.</em></h2><p>Assista, conheça nosso jeito de trabalhar e entenda como uma análise inicial pode ajudar você a avaliar os próximos passos.</p><a class="btn" href="#contato">Quero conversar <span aria-hidden="true">↗</span></a><small>Vídeo automotivo ilustrativo: Bogdan Krupin / Pexels.</small></div>
-</section>
-<section class="section alt" id="marcas"><div class="wrap split">
-  <div class="reveal"><div class="eyebrow">Diversos modelos e fabricantes</div><h2>Seu carro, sua realidade. Uma análise feita para o seu caso.</h2><p class="muted">Atendemos solicitações relacionadas a veículos de diferentes marcas e categorias. A análise depende das informações e das condições apresentadas pelo credor.</p><div class="brands" aria-label="Selecione a marca do veículo">
-<button class="brand-pill" type="button" data-brand="Volkswagen"><span class="brand-symbol">VW</span>Volkswagen</button>
-<button class="brand-pill" type="button" data-brand="Fiat"><span class="brand-symbol">FIAT</span>Fiat</button>
-<button class="brand-pill" type="button" data-brand="Jeep"><span class="brand-symbol">J</span>Jeep</button>
-<button class="brand-pill" type="button" data-brand="Peugeot"><span class="brand-symbol">PEU</span>Peugeot</button>
-<button class="brand-pill" type="button" data-brand="Citroën"><span class="brand-symbol">C</span>Citroën</button>
-<button class="brand-pill" type="button" data-brand="Outras marcas"><span class="brand-symbol">+</span>Outras marcas</button>
-</div><p class="brand-hint">Escolha uma marca para preencher o formulário automaticamente.</p></div>
-  <div class="visual reveal" role="img" aria-label="Fotografia de automóvel em cenário urbano"><span class="visual-label">Mobilidade • Planejamento • Novos caminhos</span></div>
-</div></section>
-<section class="section" id="apresentacao"><div class="wrap split presenter-layout">
-<div class="presenter-frame reveal">
-  <div class="presenter-video-wrap">
-    <video class="presenter-video" controls playsinline preload="metadata" poster="https://images.pexels.com/videos/6380711/free-video-6380711.jpg?auto=compress&cs=tinysrgb&w=1400">
-      <source src="https://videos.pexels.com/video-files/6380711/6380711-uhd_3840_2160_25fps.mp4" type="video/mp4">
-      Seu navegador não conseguiu carregar o vídeo. <a href="https://www.pexels.com/video/aerial-shot-of-a-car-driving-6380711/">Assista ao vídeo no Pexels</a>.
-    </video>
-    <div class="video-caption"><span class="video-live-dot"></span> Quita-o • EXPERIÊNCIA EM MOVIMENTO</div>
-  </div>
-</div>
-<div class="reveal"><div class="eyebrow">Sem complicação, sem promessas vazias</div><h2>Entender o caminho é o primeiro passo.</h2><p class="muted">Na Quita-o, o primeiro contato começa com uma conversa. Entendemos o cenário, explicamos quais alternativas podem existir e orientamos você a avaliar as condições diretamente com os credores.</p><p class="muted"><strong>Importante:</strong> cada caso depende da análise e das condições da instituição credora. Não prometemos descontos, aprovação ou resultados.</p><a class="btn" href="#contato">Começar minha análise <span aria-hidden="true">→</span></a><p class="notice">Para publicar o vídeo de uma pessoa apresentando a empresa, envie a gravação real do representante autorizado. Não colocamos um depoimento ou porta-voz fictício.</p></div></div></section>
-<section class="section" id="processo"><div class="wrap">
-  <div class="section-head reveal"><div class="eyebrow">Simples e direto</div><h2>Como funciona o atendimento</h2><p>Você começa com algumas informações básicas. Não envie documentos ou senhas pelo formulário.</p></div>
-  <div class="steps">
-    <article class="step reveal"><div class="num">01</div><h3>Conte sua situação</h3><p>Informe os dados básicos do veículo e o tipo de débito.</p></article>
-    <article class="step reveal"><div class="num">02</div><h3>Análise inicial</h3><p>Entendemos o cenário e esclarecemos quais informações podem ser necessárias.</p></article>
-    <article class="step reveal"><div class="num">03</div><h3>Avalie as opções</h3><p>Você recebe orientação sobre alternativas e canais de negociação.</p></article>
-    <article class="step reveal"><div class="num">04</div><h3>Decida com clareza</h3><p>Siga apenas se as condições fizerem sentido para você.</p></article>
-  </div>
-</div></section>
-<section class="section alt" id="contato"><div class="wrap split">
-  <div class="reveal"><div class="eyebrow">Vamos conversar</div><h2>Comece com uma análise da sua situação.</h2><p class="muted">Preencha os campos ao lado. Ao enviar, você será direcionado ao WhatsApp para revisar e encaminhar a mensagem.</p><p class="muted">Não solicitamos senha bancária, código de acesso ou documentos pessoais neste formulário.</p></div>
-  <form class="formbox reveal" id="leadForm">
-    <div class="form-intro"><span class="eyebrow">FORMULÁRIO DE ATENDIMENTO</span><h3>Vamos entender sua situação.</h3><p>Preencha o que souber. Os campos marcados como opcionais podem ficar em branco.</p></div>
-    <section class="form-section" aria-labelledby="dados-title">
-      <div class="form-section-title"><span>01</span><div><h3 id="dados-title">Seus dados</h3><p>Como podemos entrar em contato?</p></div></div>
-      <div class="formgrid">
-        <div class="field full"><label for="name">Nome completo <b>*</b></label><input id="name" name="name" autocomplete="name" required maxlength="120" placeholder="Digite seu nome completo"></div>
-        <div class="field"><label for="phone">WhatsApp para contato <b>*</b></label><input id="phone" name="phone" type="tel" autocomplete="tel" required maxlength="20" placeholder="(11) 99999-9999"></div>
-        <div class="field"><label for="email">E-mail</label><input id="email" name="email" type="email" autocomplete="email" maxlength="120" placeholder="voce@email.com"></div>
-        <div class="field"><label for="document">CPF ou CNPJ</label><input id="document" name="document" inputmode="numeric" maxlength="20" placeholder="Somente se necessário"></div>
-        <div class="field"><label for="city">Cidade e estado</label><input id="city" name="city" autocomplete="address-level2" maxlength="100" placeholder="Ex.: Belém - PA"></div>
-      </div>
-      <p class="form-help">Informe CPF/CNPJ apenas se necessário para identificar o contrato. Evite enviar documentos nesta página.</p>
-    </section>
-    <section class="form-section" aria-labelledby="veiculo-title">
-      <div class="form-section-title"><span>02</span><div><h3 id="veiculo-title">Veículo</h3><p>Informações do veículo financiado.</p></div></div>
-      <div class="formgrid">
-        <div class="field"><label for="plate">Placa do veículo</label><input id="plate" name="plate" maxlength="8" placeholder="ABC1D23"></div>
-        <div class="field"><label for="vehicle">Marca e modelo</label><input id="vehicle" name="vehicle" maxlength="100" placeholder="Ex.: Volkswagen Polo"></div>
-        <div class="field"><label for="year">Ano do veículo</label><input id="year" name="year" inputmode="numeric" maxlength="9" placeholder="Ex.: 2021/2022"></div>
-        <div class="field"><label for="lender">Banco ou financeira</label><input id="lender" name="lender" maxlength="100" placeholder="Ex.: Banco/financeira"></div>
-      </div>
-    </section>
-    <section class="form-section" aria-labelledby="financiamento-title">
-      <div class="form-section-title"><span>03</span><div><h3 id="financiamento-title">Financiamento e parcelas</h3><p>Se não souber algum dado, pode deixar sem preencher.</p></div></div>
-      <div class="formgrid">
-        <div class="field"><label for="contract">Número do contrato (se tiver)</label><input id="contract" name="contract" maxlength="80" placeholder="Número do contrato"></div>
-        <div class="field"><label for="installment">Valor aproximado da parcela</label><input id="installment" name="installment" inputmode="decimal" maxlength="30" placeholder="Ex.: R$ 1.250,00"></div>
-        <div class="field"><label for="dueDay">Dia de vencimento da parcela</label><select id="dueDay" name="dueDay"><option value="">Selecione, se souber</option><option>Dia 1</option><option>Dia 2</option><option>Dia 3</option><option>Dia 4</option><option>Dia 5</option><option>Dia 6</option><option>Dia 7</option><option>Dia 8</option><option>Dia 9</option><option>Dia 10</option><option>Dia 11</option><option>Dia 12</option><option>Dia 13</option><option>Dia 14</option><option>Dia 15</option><option>Dia 16</option><option>Dia 17</option><option>Dia 18</option><option>Dia 19</option><option>Dia 20</option><option>Dia 21</option><option>Dia 22</option><option>Dia 23</option><option>Dia 24</option><option>Dia 25</option><option>Dia 26</option><option>Dia 27</option><option>Dia 28</option><option>Dia 29</option><option>Dia 30</option><option>Dia 31</option><option>Não sei informar</option></select><small>Informe o dia do mês em que a parcela costuma vencer.</small></div>
-        <div class="field"><label for="overdue">Quantas parcelas estão atrasadas?</label><select id="overdue" name="overdue"><option value="">Selecione, se souber</option><option>Não estou em atraso</option><option>1 parcela</option><option>2 a 3 parcelas</option><option>4 a 6 parcelas</option><option>7 ou mais parcelas</option><option>Não sei informar</option></select></div>
-        <div class="field"><label for="since">Desde quando há atraso?</label><input id="since" name="since" maxlength="60" placeholder="Ex.: desde janeiro de 2026"></div>
-        <div class="field"><label for="balance">Saldo devedor aproximado (se souber)</label><input id="balance" name="balance" inputmode="decimal" maxlength="35" placeholder="Ex.: R$ 25.000,00"></div>
-        <div class="field full"><label for="notice">Recebeu alguma notificação?</label><select id="notice" name="notice"><option value="">Selecione</option><option>Não</option><option>Sim, cobrança do banco</option><option>Sim, notificação extrajudicial</option><option>Sim, processo ou busca e apreensão</option><option>Não tenho certeza</option><option>Não sei informar</option></select></div>
-        <div class="field full"><label for="objective">Qual é seu objetivo? <b>*</b></label><select id="objective" name="objective" required><option value="">Selecione uma opção</option><option>Quitação de contrato</option><option>2ª via de parcela</option><option>Regularização de parcelas em atraso</option><option>Refinanciamento de contrato (sujeito à análise)</option><option>Entender minhas opções</option><option>Outro</option></select></div>
-        <div class="field full"><label for="notes">Alguma informação adicional? (opcional)</label><textarea id="notes" name="notes" maxlength="600" placeholder="Conte brevemente algo que considere importante. Não envie documentos, senhas ou códigos."></textarea></div>
-      </div>
-    </section>
-    <label class="consent"><input type="checkbox" id="consent" required><span>Autorizo o uso dos dados informados para retorno sobre esta solicitação, conforme a Política de Privacidade. <b>*</b></span></label>
-    <button class="btn" type="submit" style="width:100%">Enviar informações pelo WhatsApp <span aria-hidden="true">→</span></button>
-    <p class="notice" id="formNotice" role="status">Ao continuar, o WhatsApp será aberto para você revisar a mensagem antes de enviar.</p>
-  </form>
-</div></section>
-<section class="section" id="duvidas"><div class="wrap">
-  <div class="section-head reveal"><div class="eyebrow">Transparência em primeiro lugar</div><h2>Dúvidas frequentes</h2></div>
-  <div class="faq">
-    <details class="faq-item reveal"><summary>A Quita-o é um banco ou financeira?</summary><p>Não. A Quita-o é apresentada como uma assessoria independente e não representa bancos, financeiras, montadoras ou órgãos públicos.</p></details>
-    <details class="faq-item reveal"><summary>Vocês garantem desconto ou retirada de restrições?</summary><p>Não. Condições de negociação dependem exclusivamente do credor e da análise de cada caso. Não há garantia de desconto, aprovação ou resultado.</p></details>
-    <details class="faq-item reveal"><summary>Preciso enviar documentos agora?</summary><p>Não. Para o primeiro contato, informe apenas os dados básicos solicitados. Nunca compartilhe senhas, códigos de autenticação ou dados bancários de acesso.</p></details>
-    <details class="faq-item reveal"><summary>O atendimento é online?</summary><p>Sim. O primeiro contato e a orientação inicial são realizados online, pelo WhatsApp.</p></details>
-  </div>
+<section class="hero" id="inicio"><div class="wrap hero-inner"><form class="leadbox" id="cpfForm"><p>Confira!<br>Clique no botão e veja as condições.</p><label for="cpf" style="position:absolute;left:-9999px">Digite seu CPF ou CNPJ</label><input id="cpf" name="cpf" inputmode="numeric" autocomplete="off" maxlength="18" placeholder="Digite seu CPF ou CNPJ" required><button class="primary" type="submit">Quero negociar</button></form></div></section>
+<section class="under-hero"><div class="wrap"><h2>Ou escolha uma das opções abaixo</h2><div class="channels">
+<a class="channel" href="https://wa.me/5511948722170" target="_blank" rel="noopener"><span class="ico">☎</span><div><b>Regiões Metropolitanas</b><span>Atendimento pelo WhatsApp</span></div></a>
+<a class="channel" href="https://wa.me/5511948722170" target="_blank" rel="noopener"><span class="ico">◉</span><div><b>Demais regiões</b><span>Atendimento WhatsApp</span></div></a>
+<a class="channel" href="mailto:contato@quita-o.com.br"><span class="ico">✉</span><div><b>Prefiro E-mail</b><span>Atendimento via E-mail</span></div></a>
+</div></div></section>
+<section class="section"><div class="wrap"><h2>Importante Saber</h2><div class="benefits">
+<article class="benefit"><div class="icon">◷</div><div><h3>É muito fácil</h3><p>A forma mais rápida e fácil para regularizar seus débitos</p></div></article>
+<article class="benefit"><div class="icon">▦</div><div><h3>Você escolhe o melhor</h3><p>Você decide por onde quer se comunicar, sem constrangimento e sem telefonemas. Atendimento exclusivo e personalizado!</p></div></article>
+<article class="benefit"><div class="icon">▣</div><div><h3>Flexibilidade</h3><p>Escolha a melhor data para pagamento entre as disponibilizadas para você</p></div></article>
+</div><a class="wide-cta" href="#inicio">Quero negociar</a></div></section>
+<section class="section faq"><div class="wrap"><h2>FAQ</h2>
+<details open><summary>Como solicitar a segunda via do boleto?</summary><p>Você pode emitir os boletos avulsos das parcelas do seu financiamento em nossa plataforma digital. Basta acessar a área Sou Cliente e, na página inicial, selecionar a opção “Segunda via da parcela”. Se precisar de ajuda, estamos à sua disposição.</p></details>
+<details><summary>Como emitir um boleto para quitação do financiamento?</summary><p>Para consultar as condições de quitação do financiamento, entre em contato com nossa equipe pelo WhatsApp. Nossa equipe poderá orientar sobre os próximos passos e os canais disponíveis.</p></details>
+<details><summary>Como antecipar o pagamento das parcelas do financiamento?</summary><p>As condições para antecipação dependem do contrato e da instituição responsável pelo financiamento. Fale com nossa equipe para receber orientação sobre como consultar as opções disponíveis.</p></details>
+<details><summary>Como pagar uma parcela em atraso?</summary><p>Entre em contato pelo WhatsApp para receber orientação sobre a consulta de parcelas vencidas e as opções de pagamento disponíveis.</p></details>
+<details><summary>Quero quitar meu financiamento. Como consultar o saldo devedor?</summary><p>Solicite a consulta pelos canais de atendimento. Tenha em mãos as informações do contrato para facilitar a identificação do financiamento.</p></details>
+<details><summary>O que fazer se eu pagar uma parcela de forma invertida?</summary><p>Entre em contato com o atendimento e informe os dados do pagamento para receber orientação sobre a regularização.</p></details>
+<details><summary>Paguei uma parcela duas vezes. O que devo fazer?</summary><p>Entre em contato com o atendimento e informe que houve pagamento em duplicidade para verificar os procedimentos disponíveis.</p></details>
 </div></section>
 </main>
-<footer class="footer"><div class="wrap">
-  <div class="footerrow"><a class="brand" href="#inicio" aria-label="Quita-o início">Quita-o<span>.</span></a><div class="footerlinks"><a href="#privacidade">Privacidade</a><a href="#termos">Termos de uso</a><a href="#contato">Contato</a></div></div>
-  <small id="privacidade"><strong>Privacidade:</strong> os dados preenchidos são usados para preparar seu contato pelo WhatsApp. O formulário não envia automaticamente os dados para um banco de dados. Evite incluir informações sensíveis. Você pode solicitar esclarecimentos pelo canal de atendimento.</small>
-  <small id="termos"><strong>Termos e aviso:</strong> a Quita-o é uma assessoria independente. Não possui vínculo oficial ou representação de Volkswagen, Stellantis, bancos, financeiras, credores ou órgãos públicos. A atuação não garante descontos, quitação, suspensão de medidas ou regularização. As decisões e condições cabem às instituições responsáveis.</small>
-  <small>© <span id="yearNow"></span> Quita-o. Todos os direitos reservados.</small>
-</div></footer>
-<a class="whats" href="https://wa.me/5511948722170?text=Ol%C3%A1%2C%20quero%20conversar%20sobre%20a%20situa%C3%A7%C3%A3o%20do%20meu%20ve%C3%ADculo." target="_blank" rel="noopener noreferrer" aria-label="Falar com a Quita-o pelo WhatsApp">WhatsApp ↗</a>
+<footer><div class="wrap"><div class="footer-logo">Quita-o</div><p>Atendimento digital para negociação de financiamentos</p><p><b>Aviso de Privacidade:</b> <a href="#privacidade">Confira</a></p><p class="dim">Copyright © 2026 Quita-o | Todos os direitos reservados</p><p class="security">✓ Você está em um Ambiente Seguro.</p><p class="dim" id="privacidade">Seus dados são utilizados para atendimento da solicitação e contato pelos canais informados.</p></div></footer>
+<div class="quick-menu" id="quickMenu"><a href="#inicio">Quero negociar</a><a href="https://wa.me/5511948722170">WhatsApp</a><a href="mailto:contato@quita-o.com.br">E-mail</a></div>
+<div class="float-actions"><button class="float-plus" id="plus" aria-label="Abrir opções">+</button><a class="float-wa" href="https://wa.me/5511948722170" aria-label="WhatsApp"><span>◉</span></a></div>
 <script>
-
-document.querySelectorAll(".brand-pill").forEach(button=>{
- button.addEventListener("click",()=>{
-  document.querySelectorAll(".brand-pill").forEach(b=>b.classList.remove("active"));
-  button.classList.add("active");
-  const vehicle=document.getElementById("vehicle");
-  if(vehicle){const brand=button.dataset.brand;vehicle.value=brand==="Outras marcas"?"":brand+" ";vehicle.focus();document.getElementById("contato").scrollIntoView({behavior:"smooth",block:"center"});}
- });
-});
-
-  const WHATSAPP_NUMBER = "5511948722170";
-  const menuButton = document.getElementById("mobileToggle");
-  const nav = document.getElementById("navlinks");
-  menuButton.addEventListener("click",()=>{const open=nav.classList.toggle("open");menuButton.setAttribute("aria-expanded",String(open));});
-  nav.querySelectorAll("a").forEach(a=>a.addEventListener("click",()=>{nav.classList.remove("open");menuButton.setAttribute("aria-expanded","false");}));
-  document.getElementById("yearNow").textContent = new Date().getFullYear();
-  const revealObserver = new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add("visible");revealObserver.unobserve(entry.target);}}),{threshold:.12});
-  document.querySelectorAll(".reveal").forEach(el=>revealObserver.observe(el));
-  document.getElementById("leadForm").addEventListener("submit",event=>{
-    event.preventDefault();
-    const form=event.currentTarget;
-    if(!form.reportValidity()) return;
-    const data=new FormData(form);
-    const fields=[
-      ["Nome completo","name"],["WhatsApp","phone"],["E-mail","email"],["CPF/CNPJ","document"],["Cidade/Estado","city"],
-      ["Placa","plate"],["Marca e modelo","vehicle"],["Ano do veículo","year"],["Banco/financeira","lender"],
-      ["Número do contrato","contract"],["Valor da parcela","installment"],["Dia de vencimento","dueDay"],
-      ["Parcelas em atraso","overdue"],["Desde quando há atraso","since"],["Saldo devedor aproximado","balance"],
-      ["Notificação recebida","notice"],["Objetivo","objective"],["Informações adicionais","notes"]
-    ];
-    const lines=["Olá! Quero solicitar uma análise inicial da situação do meu veículo."];
-    fields.forEach(([label,key])=>{const value=String(data.get(key)||"").trim();if(value)lines.push(label+": "+value);});
-    const url="https://wa.me/"+WHATSAPP_NUMBER+"?text="+encodeURIComponent(lines.join("\n"));
-    window.open(url,"_blank","noopener,noreferrer");
-    document.getElementById("formNotice").textContent="O WhatsApp foi aberto. Revise a mensagem e toque em enviar.";
-  });
-
-const reduceMotion=window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-if(!reduceMotion){
- const glow=document.createElement("div");glow.className="cursor-glow";document.body.appendChild(glow);
- let px=innerWidth/2,py=innerHeight/2,raf=0;
- window.addEventListener("pointermove",e=>{px=e.clientX;py=e.clientY;if(!raf)raf=requestAnimationFrame(()=>{glow.style.left=px+"px";glow.style.top=py+"px";raf=0;});},{passive:true});
- const hero=document.querySelector(".hero");
- window.addEventListener("scroll",()=>{const y=scrollY;if(hero&&y<innerHeight*1.2)hero.style.backgroundPosition="center calc(58% + "+(y*.16)+"px)";},{passive:true});
- document.querySelectorAll(".service,.step,.visual,.presenter-frame").forEach(card=>{
-  card.addEventListener("pointermove",e=>{if(e.pointerType==="touch")return;const r=card.getBoundingClientRect(),x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;card.style.transform="perspective(900px) rotateX("+(-y*4)+"deg) rotateY("+(x*5)+"deg) translateY(-4px)";});
-  card.addEventListener("pointerleave",()=>{card.style.transform="";});
- });
- document.querySelectorAll(".btn").forEach(btn=>{
-  btn.addEventListener("pointermove",e=>{const r=btn.getBoundingClientRect(),x=e.clientX-r.left-r.width/2,y=e.clientY-r.top-r.height/2;btn.style.transform="translate("+x*.08+"px,"+y*.12+"px)";});
-  btn.addEventListener("pointerleave",()=>{btn.style.transform="";});
- });
-}
-
-</script>
-</body>
-</html>
+const phone='5511948722170';
+const cpf=document.getElementById('cpf');
+cpf.addEventListener('input',()=>{let v=cpf.value.replace(/\D/g,'').slice(0,14);if(v.length<=11)v=v.replace(/(\d{3})(\d)/,'$1.$2').replace(/(\d{3})(\d)/,'$1.$2').replace(/(\d{3})(\d{1,2})$/,'$1-$2');else v=v.replace(/^(\d{2})(\d)/,'$1.$2').replace(/^(\d{2})\.(\d{3})(\d)/,'$1.$2.$3').replace(/\.(\d{3})(\d)/,'.$1/$2').replace(/(\d{4})(\d)/,'$1-$2');cpf.value=v});
+document.getElementById('cpfForm').addEventListener('submit',e=>{e.preventDefault();if(!cpf.value.trim())return;const msg='Olá! Quero negociar. Meu CPF/CNPJ é: '+cpf.value;window.open('https://wa.me/'+phone+'?text='+encodeURIComponent(msg),'_blank','noopener')});
+document.getElementById('plus').addEventListener('click',()=>document.getElementById('quickMenu').classList.toggle('open'));
+</script></body></html>
